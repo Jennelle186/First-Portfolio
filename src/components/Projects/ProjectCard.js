@@ -9,6 +9,7 @@ import {
   Typography,
   Button,
   Stack,
+  styled,
 } from "@mui/material";
 import { Box } from "@mui/system";
 
@@ -23,9 +24,17 @@ const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
     transform: "translateY(20px)",
   };
 
+  const CardContainer = styled(Card)(({ theme }) => ({
+    maxWidth: 350,
+    margin: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 300,
+      marginBottom: "2.5rem",
+    },
+  }));
+
   return (
-    <Card
-      sx={{ maxWidth: 350, margin: "1rem" }}
+    <CardContainer
       elevate={0}
       style={id == cardHovered ? { ...mediaStyle, ...hoverStyle } : mediaStyle}
       onMouseEnter={() => {
@@ -36,12 +45,7 @@ const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
       }}
     >
       <CardActionArea>
-        <CardMedia
-          component="img"
-          image={img}
-          style={{ height: "200px" }}
-          alt={title}
-        />
+        <CardMedia component="img" image={img} height="200" alt={title} />
 
         <CardContent>
           <Typography variant="body1" component="div">
@@ -110,7 +114,7 @@ const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
           ))}
         </Box>
       </CardActions>
-    </Card>
+    </CardContainer>
   );
 };
 

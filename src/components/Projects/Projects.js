@@ -1,49 +1,12 @@
-import React, { useState } from "react";
-import {
-  Card,
-  CardMedia,
-  Grid,
-  Typography,
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  Button,
-  CardActions,
-  Box,
-} from "@mui/material";
+import React from "react";
+import { Typography, Box } from "@mui/material";
 import { ProjectList } from "./listProjects";
 import "./projects.css";
 import ProjectCard from "./ProjectCard";
 
-//https://www.youtube.com/watch?v=OAx0we521sk
-//https://www.youtube.com/watch?v=Q5y6pwoE3cM <--parallax
-
 const Projects = () => {
-  const [cardHovered, setCardHovered] = useState(null);
-
-  const mediaStyle = {
-    transition: "transform 0.5s ease-in-out",
-    zIndex: "2",
-    height: "360px",
-    wdith: "260px",
-    backgroundColor: "#faebd7",
-    marginBottom: "2rem",
-  };
-
-  const hoverStyle = {
-    transform: "translateY(20px)",
-  };
-
-  const cardImage = {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    top: 0,
-    left: 0,
-  };
-
   return (
-    <section style={{ padding: "5rem", flexGrow: 1 }} id="projects">
+    <section className="section" id="projects">
       <Typography
         gutterBottom
         variant="h5"
@@ -56,6 +19,7 @@ const Projects = () => {
           letterSpacing: ".3rem",
           color: "black",
           marginBottom: "1rem",
+          marginTop: "4rem",
         }}
       >
         PROJECTS
