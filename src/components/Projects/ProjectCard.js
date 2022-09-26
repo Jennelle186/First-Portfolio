@@ -13,7 +13,16 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 
-const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
+const ProjectCard = ({
+  title,
+  description,
+  tags,
+  img,
+  link,
+  id,
+  site,
+  source,
+}) => {
   const [cardHovered, setCardHovered] = useState(null);
 
   const mediaStyle = {
@@ -69,7 +78,6 @@ const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
           }}
         >
           <Stack direction="row" spacing={2}>
-            {" "}
             <a href={link} style={{ textDecoration: "none" }} target="_blank">
               <Button
                 size="small"
@@ -79,7 +87,7 @@ const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
                   color: "#964B00",
                 }}
               >
-                Github
+                {source === "Github" ? <>Github</> : <>Screenshots</>}
               </Button>
             </a>
             <a href={site} style={{ textDecoration: "none" }} target="_blank">
@@ -88,7 +96,7 @@ const ProjectCard = ({ title, description, tags, img, link, id, site }) => {
                 variant="contained"
                 style={{ backgroundColor: "antiquewhite", color: "#964B00" }}
               >
-                Live View
+                Demo
               </Button>
             </a>
           </Stack>
