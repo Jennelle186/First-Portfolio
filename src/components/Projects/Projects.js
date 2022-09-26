@@ -36,6 +36,7 @@ const Projects = () => {
             tags={project.tags}
             link={project.link}
             site={project.liveView}
+            source={project.source}
           />
         ))}
 
