@@ -19,7 +19,7 @@ export const ProjectList = [
       "Designed, developed, and built this system this client-based online sales and inventory system for our OJT (On-the-Job) training.",
     tags: ["React", "Firebase", "Material-UI"],
     source: "Screenshot",
-    link: "  https://drive.google.com/uc?id=1i7ghT87tMgcqESsl3pxtF4_G7--frB8K",
+    link: "  https://drive.google.com/uc?id=1NMQkIprBZI8v7dwGXA_t4rKR_VLBf68a",
     liveView: "https://lines-hub.web.app/",
     image: "https://drive.google.com/uc?id=1kbWY6-ei08BLpDQ_A6aEybn3CDSgoQiV",
   },
