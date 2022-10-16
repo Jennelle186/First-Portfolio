@@ -24,3 +24,5 @@ export const ProjectList = [
     image: "https://drive.google.com/uc?id=1kbWY6-ei08BLpDQ_A6aEybn3CDSgoQiV",
   },
 ];
+
+// https://drive.google.com/file/d/1NMQkIprBZI8v7dwGXA_t4rKR_VLBf68a/view?usp=sharing
