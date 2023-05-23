@@ -57,7 +57,7 @@ const Hero = () => {
             ))}
           </Stack> */}
           <a
-            href="https://drive.google.com/file/d/1ZClzQsMjPBmPlsHd-hfMnhLS2gD2HJqD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1mBpSizJ5HSzX0VmuAvun_vYM96yFTiC5/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
